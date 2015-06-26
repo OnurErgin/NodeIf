@@ -9,10 +9,10 @@ NodeIf.class: NodeIf.java NodeIfMsg.java RssiMsg.java Measurement.java
 	javac $^
 
 RssiMsg.java: RssiMessages.h
-	mig java -target=telosb -java-classname=RssiMsg $< RssiMsg -o $@
+	nescc-mig java -java-classname=RssiMsg $< RssiMsg -o $@
 
 NodeIfMsg.java: ../NodeIfMessages.h
-	mig java -target=telosb -java-classname=NodeIfMsg $< NodeIfMsg -o $@
+	nescc-mig java -java-classname=NodeIfMsg $< NodeIfMsg -o $@
 
 clean: 
 	rm *.class NodeIfMsg.java

@@ -6,5 +6,5 @@ CFLAGS += -I$(TOSDIR)/lib/printf
 
 CFLAGS += -DCC2420_DEF_RFPOWER=31
 
-include $(MAKERULES)
+include $(TINYOS_ROOT_DIR)/Makefile.include
 
