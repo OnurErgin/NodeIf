@@ -1,1 +1,4 @@
 build/
+*.pyc
+NodeIfMsg.py
+RssiMsg.py
